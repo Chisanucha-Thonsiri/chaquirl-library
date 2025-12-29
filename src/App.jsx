@@ -5,6 +5,7 @@ import Modal from './components/Modal';
 import { booksData } from './data/books.js';
 import newGif from './assets/new.gif';
 import Snow from './components/Snow';
+import logoSvg from './assets/logo.svg';
 import { faFire, faCode, faBook, faSearch,faLayerGroup, faLaptopCode, faDna } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -44,7 +45,7 @@ function App() {
       <header className="header" >
         <h1>คลังสรุป Chaqui.rl</h1>
         <div className="sub"><p>ติดตามกันได้ที่: </p> <div className="clearNoteProfileBox" onClick={() => window.location.href = 'https://www.clearnotebooks.com/ja/authors/6025681'}>
-          <img src='./src/assets/logo.svg'></img>
+          <img src={logoSvg}></img>
           <h5>Chaqui.rl</h5></div></div>
       </header>
       <div className="controls-container">
